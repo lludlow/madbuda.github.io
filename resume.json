@@ -1,0 +1,382 @@
+{
+    "basics": {
+      "name": "Larry Ludlow",
+      "label": "Principal Engineer",
+      "picture": "Larry.JPG",
+      "email": "lludlow@gmail.com",
+      "phone": "",
+      "website": "",
+      "summary": "A Detroit Metro Area senior Global or Enterprise level infrastructure architect setting and implementing direction that encourages new innovation and the pursuit of excellence. \n\nExpert in solution architecture, design, implementation and support of secure, high performance, scalable, globally distributed Internet connected data center environments, private and public cloud server infrastructure.\n\nUnique ability to step into an opportunity, assess the needs, rapidly identify possible solutions taking into account the “Big Picture” and doing whatever is required to accomplish win:win successes. Excels at building intelligent, common sense, loyal teams that exceed expectations. A problem solver and troubleshooter.\n",
+      "location": {
+        "city": "Livonia",
+        "countryCode": "US",
+        "region": "Michigan"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "lludlow2",
+          "url": "https://www.linkedin.com/in/lludlow2/"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "Otava",
+        "endDate": "",
+        "highlights": [],
+        "position": "Principal Engineer / Manager",
+        "startDate": "2019-02-28",
+        "summary": "\nBuilt a highly available, distributed S3 product with streamlined deplyments using CI/CD and Ansible. \nProvide Tier 3 support for customers and channel partners.\nWrote training materials and held classes on ansible, gitlab, docker, and CI/CD practices.\nDeveloped ansible good practices to streamline new projects.\nActively work with product team to develop new offerings and improve existing\nMantain a lab to support proliferation of automation within the organization.\nTechnical lead for our Gen3 cloud deployemnt utilizing vCloud Director.",
+        "website": "https://www.otava.com"
+      },
+      {
+        "company": "Little Caesars Pizza",
+        "endDate": "2018-12-31",
+        "highlights": [],
+        "position": "Site Reliability Engineer",
+        "startDate": "2018-03-31",
+        "summary": "Maintain CI/CD for all facets of online and mobile ordering\nDevelop ansible and terraform modules for maintenance and growth of our multi-cloud environment (MS Azure and Google cloud).\nBuilt a modular monitoring and metrics stack utilizing prometheus, influxdb, grafana, alertmanager in a container environment to scale as needed.\nConfigured federation between monitoring systems in each virtual environment (VPC)\nCreated predictive algorithms to alert on potential problems before they happen.\nBuilt a container environment to host .netCore applications with auto scaling to provide cost savings over a standard machine deployment.\nBuilt several proof of concepts to manage remote store systems (15,000+). Most of these utilized ansible to perform the configuration with a higher level orchestration (salt, puppet, foreman)\nWrote an ESB consumer and dispatcher in python to replace windows based services.\nCommitted upstream fixes to several open source products we utilize. \nDeveloped a python based service to scrape metrics from our cloud providers and expose them to a metrics endpoint for prometheus consumption.",
+        "website": "https://littlecaesars.com"
+      },
+      {
+        "company": "North American Bancard",
+        "endDate": "2018-03-31",
+        "highlights": [],
+        "position": "Sr. Linux Engineer",
+        "startDate": "2016-09-30",
+        "summary": "Responsible for all Linux servers in a multi company environment. Systems include Ubuntu, CEntOS, and Redhat Enterprise Linux\nManaged automated builds and deployments using Stash and Bamboo.\nAutomated deployments to AWS using bamboo and docker.\nBuilt a configuration management system using Ansible to deploy, configure, and ensure against configuration drift. I have also developed many other ansible plays to perform inventory collection, patching, and PCI remediation. Additionally I wrote plugins to send status of each ef these to our central logging system.\nDeveloped a centralized log management system using Logstash, Elasticsearch, Kabana, and HAProxy to provide a highly available and scalable method of collecting logs from our servers,  infrastructure, and applications. \nImplemented a server monitoring system and integrated it with our alerting system and slack.\nBuilt a server and application metrics dashboard using Graphite, Grafana, and collectd. This has enabled dev, ops, and support people to see historic system metrics and better troubleshoot servers and applications.",
+        "website": "https://www.northamericanbancard.com/"
+      },
+      {
+        "company": "The Auto Club Group",
+        "endDate": "2016-06-30",
+        "highlights": [],
+        "position": "Manager, Server Engineering",
+        "startDate": "2013-06-30",
+        "summary": "High level responsibilities:\n- Plan, organize, and direct activities related to server infrastructure services.\n- Manage technology vendor relationships and contract negotiations\n- Provide technical process oversight and assistance to a variety of IT projects\n- IT Security, Audit and Compliance\n- Disaster recovery planning and testing\n\nDirectly Managed the following teams:\n- *Nix Server Teams (AIX, RedHat, Solaris)\n- Microsoft Server Team (AD, System Center, Exchange, Lync/OCS)\n- Virtual Server Team (Vmware, RHEV, Hyper­V)\n- Middleware (Apache, JBoss, IIS)\n\nEnvironment:\n- 3 Data centers 2 in Michigan 1 in Florida\n- 200+ remote sites (file, print, DC)\n- 1000 +/­ Linux servers\n- 1400 +/­ Windows servers\n- 80 +/­ ESX hosts",
+        "website": "https://aaa.com"
+      },
+      {
+        "company": "The Auto Club Group",
+        "endDate": "2013-06-30",
+        "highlights": [],
+        "position": "Sr. IT Consultant / Team Leader",
+        "startDate": "2012-09-30",
+        "summary": "Build, Patch, and maintain 1000+ Linux servers\nDevelop standard operating procedures",
+        "website": "https://aaa.com"
+      },
+      {
+        "company": "University of Michigan Health System",
+        "endDate": "2012-09-30",
+        "highlights": [],
+        "position": "Linux Team Lead",
+        "startDate": "2008-01-31",
+        "summary": "Maintain 200+ servers (including multiple HA clusters)\nManage licensing and contracts \nNegotiate with vendors\nTake an active roll in committees to determine the best practices and technologies\nLead purchasing efforts (RFP/RPQ/etc.)",
+        "website": "https://med.umich.edu/"
+      },
+      {
+        "company": "L2 Enterprise",
+        "endDate": "2012-01-31",
+        "highlights": [],
+        "position": "Owner",
+        "startDate": "1997-03-31",
+        "summary": "Systems Security and Management.\nNotable Clients:\nGE Aerospace\nDetroit Beer Company\nHenkel\nDetroit Auto Dealers Association\nEastern Michigan University\nDetroit Opera House\nCity of Troy\nGrid4 Communications",
+        "website": ""
+      },
+      {
+        "company": "INCAT",
+        "endDate": "2008-01-31",
+        "highlights": [],
+        "position": "Engineering Consultant",
+        "startDate": "2007-09-30",
+        "summary": "Designed and installed a large JBoss/Linux environment to support finite element analysis for a large aerospace organization.\nWrote and debugged java code for a large scale portal designed to provide reporting and request tracking to engineering groups.\nUpgraded 100+ Solaris servers across a global network for a large foreign automotive company.",
+        "website": ""
+      },
+      {
+        "company": "Budco Inc.",
+        "endDate": "2007-09-30",
+        "highlights": [],
+        "position": "Linux / Unix Systems Engineer",
+        "startDate": "2006-03-31",
+        "summary": "Lead Engineer on a \"Fork Lift\" Infrastructure upgrade (Solaris to Linux)\nImplemented an internal update server (yum) and custom compiled rpm's from source to meet our specific needs\nCompiled RedHat Cluster Suite and GFS kernels from source to provide us with a cost effective method of OS level clustering and shared filesystems\nAssist with installation and configuration of Oracle 10g RAC clusters\nImplemented a clustered JBoss AS environment (F5 Load balancers in front of an Apache web farm using mod_jk)\nMigrated all local users and service accounts to a Highly Available LDAP directory server that synchronizes users passwords with Active Directory\nProvide Linux training to DBA and Systems administration teams\nDesigned an Open source monitoring system that compliments our existing Compuware Monitoring Suite, and displays server health on graphical representation of our network",
+        "website": ""
+      },
+      {
+        "company": "NuTechs",
+        "endDate": "2006-09-30",
+        "highlights": [],
+        "position": "Unix/Linux Engineer (BUDCO)",
+        "startDate": "2006-03-31",
+        "summary": "Lead Engineer on a \"Fork Lift\" Infrastructure upgrade (Solaris to Linux)\nImplemented an internal update server (yum) and custom compiled rpm's from source to meet our specific needs\nCompiled RedHat Cluster Suite and GFS kernels from source to provide us with a cost effective method of OS level clustering and shared filesystems\nAssist with installation and configuration of Oracle 10g RAC clusters",
+        "website": "https://www.nutechs.com/"
+      },
+      {
+        "company": "Web Elite",
+        "endDate": "2006-03-31",
+        "highlights": [],
+        "position": "Senior Systems Manager",
+        "startDate": "2005-04-30",
+        "summary": "Responsible for generating quotes, planning projects, and providing training to clients\nProvide application, web, email, and database hosting for companies seeking to reduce there IT budget\nEngineered and Built a remote Datacenter using Cisco, IBM, Dell, and Sun Hardware\nManage 29 Red Hat AS3 Servers running a mix of Apache, Oracle, Qmail, DNS, DHCP, Tomcat, Zope, Open LDAP, Subversion, and MySQL\nDesigned an Open source monitoring system that monitors and reports customer SLA, server health, database performance, SPAM, network usage, and web site statistics\nManage 17 Sun servers (Solaris 8, 9, 10) running Sun Java Enterprise, Apache, MySql, Oracle, and Tomcat\nManage 3 Windows 2003 Servers running Exchange 2003, IIS, DHCP, and Netbackup 5.x",
+        "website": "https://www.webelite.com"
+      },
+      {
+        "company": "Coast to Coast Telecom",
+        "endDate": "2002-05-31",
+        "highlights": [],
+        "position": "Data Services Manager",
+        "startDate": "2000-01-31",
+        "summary": "Coordinated an interdepartmental project to convert 60,000 customers to new billing system in order to save the company $3 Million\nNegotiated contracts with vendors to provide the best possible service yet still maintain profitability\nMaintained WAN consisting of 2x OC48, 4x DS3’s, 15x T1’s, and Multiple Cisco routers and switches\nAdministered 5 RedHat 7.x Linux servers (Bind, Apache, Radius, Sendmail)\nProvided 24hr tier 3 support for Collocation, dedicated IP, and remote customer base of 500 users",
+        "website": ""
+      },
+      {
+        "company": "Jay Enn Corporation",
+        "endDate": "2000-01-31",
+        "highlights": [],
+        "position": "IT Manager",
+        "startDate": "1997-03-31",
+        "summary": "Designed and implemented a medium sized office LAN (under 100 users)\nResponsible for day to day system administration tasks in a Windows NT 4.0 environment\nInstalled, configured, and administered Windows NT4 with DHCP, MS Exchange Server 5.5\nEvaluated and recommended new software and hardware, both on the desktop PCs and the servers\nTroubleshooting hardware and software problems on desktop and laptop PCs running Windows 98 and Windows NT Workstation 4.0\nWrote policies and procedures for IT department",
+        "website": "http://www.jayenn.com/"
+      }
+    ],
+    "volunteer": [
+      {
+        "organization": "Open Management Consortium",
+        "position": "Open Source Advocate",
+        "website": "",
+        "startDate": "2005-12-31",
+        "endDate": "2009-12-31",
+        "summary": null,
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "institution": "Eidgenössische Technische Hochschule Zürich",
+        "area": "Computing: Art, Magic, Science",
+        "studyType": "",
+        "startDate": "2014-12-31",
+        "endDate": "2014-12-31",
+        "gpa": "",
+        "courses": [
+            "Eiffel",
+            "Intro to theoretical computer science"
+        ]
+      },
+      {
+        "institution": "Duke University",
+        "area": "Reasoning, Data Analysis and Writing",
+        "studyType": "",
+        "startDate": "2014-12-31",
+        "endDate": "2015-12-31",
+        "gpa": "",
+        "courses": [
+            "How to Reason and Argue",
+            "Data Analysis and Statistical Inference",
+            "English Composition I"
+        ]
+      },
+      {
+        "institution": "IE Business School",
+        "area": "Critical Perspectives on Management",
+        "studyType": "",
+        "startDate": "2014-12-31",
+        "endDate": "2014-12-31",
+        "gpa": "",
+        "courses": []
+      },
+      {
+        "institution": "Massachusetts Institute of Technology",
+        "area": "Supply Chain Fundamentals",
+        "studyType": "",
+        "startDate": "2014-12-31",
+        "endDate": "2014-12-31",
+        "gpa": "",
+        "courses": []
+      },
+      {
+        "institution": "David Chinsky & Associates",
+        "area": "The Institute for Leadership Fitness™",
+        "studyType": "",
+        "startDate": "2010-12-31",
+        "endDate": "2011-12-31",
+        "gpa": "",
+        "courses": []
+      },
+      {
+        "institution": "Novell Advanced Technical Training",
+        "area": "Novell Certified Linux Engineer ",
+        "studyType": "",
+        "startDate": "2009-12-31",
+        "endDate": "2011-12-31",
+        "gpa": "",
+        "courses": [
+            "Novell Certified Linux Engineer",
+            "Advanced Linux Troubleshooting and Optimization",
+            "Novell Zenworks Administrator"
+        ]
+      },
+      {
+        "institution": "HP",
+        "area": "HP BladeSystems",
+        "studyType": "",
+        "startDate": "2010-12-31",
+        "endDate": "2010-12-31",
+        "gpa": "",
+        "courses": [
+            "Virtual Connect",
+            "Boot-from-SAN",
+            "BladeSystem Administration"
+        ]
+      },
+      {
+        "institution": "Symantec",
+        "area": "Administration",
+        "studyType": "",
+        "startDate": "2006-12-31",
+        "endDate": "2010-12-31",
+        "gpa": "",
+        "courses": [
+            "Storage Foundation + HA 5.0",
+            "Netbackup 6.x Administration",
+            "Netbackup 6.x Troubleshooting"
+        ]
+      },
+      {
+        "institution": "Univerity of Michigan",
+        "area": "Lean Healthcare Management",
+        "studyType": "",
+        "startDate": "2009-12-31",
+        "endDate": "2009-12-31",
+        "gpa": "",
+        "courses": []
+      },
+      {
+        "institution": "RedHat",
+        "area": "Certifications",
+        "studyType": "",
+        "startDate": "2004-12-31",
+        "endDate": "2009-12-31",
+        "gpa": "",
+        "courses": [
+            "RHCJA",
+            "RHCE 5"
+        ]
+      }
+    ],
+    "awards": [],
+    "publications": [
+      {
+        "name": "Containers: Pros, Cons and How to Mitigate Risk",
+        "publisher": "Container Journal",
+        "releaseDate": "2020-01-07",
+        "website": "https://containerjournal.com/topics/container-ecosystems/containers-pros-cons-and-how-to-mitigate-risk/",
+        "summary": ""
+      }
+    ],
+    "skills": [
+      {
+        "name": "Linux / Unix",
+        "level": "",
+        "keywords": [
+            "Redhat",
+            "Ubuntu",
+            "Suse",
+            "AIX",
+            "Solaris"
+        ]
+      },
+      {
+        "name": "Virtualization",
+        "level": "",
+        "keywords": [
+            "vmware",
+            "vCloud Director",
+            "KVM",
+            "Proxmox",
+            "PowerVM"
+        ]
+      },
+      {
+        "name": "DevOps",
+        "level": "",
+        "keywords": [
+            "Puppet",
+            "Ansible",
+            "SaltStack",
+            "Terraform",
+            "Argo",
+            "Flux",
+            "Helm"
+        ]
+      },
+      {
+        "name": "Languages",
+        "level": "",
+        "keywords": [
+            "Python",
+            "golang",
+            "PHP",
+            "Java",
+            "C++",
+            "Rust"
+        ]
+      },
+      {
+        "name": "Cloud",
+        "level": "",
+        "keywords": [
+            "AWS",
+            "Azure",
+            "Google Cloud"
+        ]
+      },
+      {
+        "name": "Containers",
+        "level": "",
+        "keywords": [
+            "K8S",
+            "Rancher",
+            "Docker",
+            "Docker Swarm"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Native Speaker"
+      }
+    ],
+    "interests": [],
+    "references": [
+      {
+        "name": "Larry Dragich",
+        "reference": "Larry is an outstanding technical resource supporting Linux / Unix, adept at coming up with creative solutions to any technical problem that arises.  He also displays a very calm demeanor and remains that way in high pressure situations working against tight deadlines and when making presentations to Sr. IT Leadership. "
+      },
+      {
+        "name": "Scott Burgess, PMP, ITIL",
+        "reference": "I’ve had the pleasure of knowing Larry during his time at The Auto Club Group.  Larry is well versed across multiple technical disciplines. He’s proven his capabilities many times while working together on several projects. "
+      },
+      {
+        "name": "Frank Remski",
+        "reference": "I enjoyed working with Larry during his time at ACG.  He was always approachable, positive and results oriented.  Supporting mission critical technology is stressful by nature, but Larry was one of those people who could be counted on to roll up his sleeves and do whatever was necessary to solve problems."
+      },
+      {
+        "name": "Sivakumar Ramarajan",
+        "reference": "I'm glad that I had a chance to work with Larry at UM for 4 years. He was technical strong and was instrumental in implementing new technologies like puppet, Munin and SMT to manage our servers better. \r\n\r\nHe was really fun to work with and always to willing to help and impart his technical skills to me and the group."
+      },
+      {
+        "name": "Merdi Zonooz",
+        "reference": "Mr. Larry Ludlow is an asset to any organization due to his deep knowledge in Linux / UNIX in addition to his unlimited understand and capability in design and architecture of open source software. Larry is articulate, detail oriented, very efficient and by all means he is all about customer satisfaction.   Larry strives in bringing new innovations and his solutions to the IT challenges are thoughtful and intelligent.\r\nLarry has a very friendly personality and he gets along with everyone. His sense of responsibility and taking ownership of the problems and issues makes him a breath of fresh air to deal with."
+      },
+      {
+        "name": "Darren Cooley",
+        "reference": "Larry is a very knowledgeable and well rounded technologist. I worked with him while on the Linux team, and learned a great deal from him. I believe that he would be a valuable asset to any company's team."
+      },
+      {
+        "name": "Beth Pumo, MBA, CISA, CISM, CISSP",
+        "reference": "Larry has been an exceptional member of the Linux team at UMHS/MCIT.   He demonstrates a willingness to share his knowledge without reserve, which is sometimes rare in this day and age, and has proven himself to be technically strong.    Larry's attention to customer service, and his responsiveness to the needs of not only his customer base but also his peers has been very valuable."
+      }
+    ]
+  }
