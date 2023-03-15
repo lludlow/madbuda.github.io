@@ -157,6 +157,18 @@
     ],
     "education": [
       {
+        "institution": "Western Goverenors University",
+        "area": "Information Technology Management",
+        "studyType": "Bachelor",
+        "startDate": "2012-10-1",
+        "endDate": "2024",
+        "gpa": "",
+        "courses": [
+            "Eiffel",
+            "Intro to theoretical computer science"
+        ]
+      },
+      {
         "institution": "Eidgenössische Technische Hochschule Zürich",
         "area": "Computing: Art, Magic, Science",
         "studyType": "",
@@ -267,6 +279,15 @@
             "RHCJA",
             "RHCE 5"
         ]
+      },
+      {
+        "institution": "Oakland University",
+        "area": "Computer Science",
+        "studyType": "Bachelor",
+        "startDate": "1997",
+        "endDate": "2000",
+        "gpa": "",
+        "courses": []
       }
     ],
     "awards": [],
