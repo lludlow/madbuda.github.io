@@ -27,121 +27,155 @@
     },
     "work": [
       {
-        "company": "Otava",
+        "company": "AccumTech",
         "endDate": "",
-        "highlights": [],
-        "position": "Principal Engineer / Manager",
+        "highlights": [
+          "Lead the IT team in optimizing technology operations, including infrastructure management, network security, and database administration.",
+          "Develop and implement IT policies and systems aligned with organizational strategies to enhance operational efficiency.",
+          "Manage annual budget planning and resource allocation, ensuring cost-effective utilization of IT resources.",
+          "Build and nurture vendor relationships to secure reliable IT services and solutions.",
+          "Mentor and develop a high-performing IT team, fostering a culture of continuous learning and collaboration."
+        ],
+        "position": "IT Manager",
+        "startDate": "2023-05-01",
+        "summary": "As the IT Manager at Accumtech, I directed our IT team toward optimizing the entirety of our technology operations, which spanned from infrastructure management to network security and database administration. I was instrumental in crafting and applying IT policies that not only mirrored the company's strategic goals but also significantly enhanced operational efficiency",
+        "website": "https://accumtech.com"
+      },
+      {
+        "company": "Otava",
+        "endDate": "2023-2-20",
+        "highlights": [
+          "Automate all the things to minimize human error.",
+          "Built an ansible framework to manage cumulus network devices across multiple data centers.",
+          "Created a highly available, distributed S3 offering to provide tier 3 storage to our customers.",
+          "Provide Tier 3 support for customers and channel partners.",
+          "MOP/SOP for front-line support and deployment teams so they can utilize ansible to reduce time to delivery/recovery",
+          "Wrote training materials and held classes on ansible, gitlab, docker, and CI/CD practices.",
+          "Developed ansible good practices to streamline new projects.",
+          "Actively work with the product team to develop new offerings and improve existing.",
+          "Built a lab to support the proliferation of automation within the organization.",
+          "POC for vCloud director to better support multi-tenancy in our vmware environment.",
+          "Integrated 3 client portals using a microservices backend architecture, substantially enhancing customer experience, and reducing billing man-hours by an estimated 95%.",
+          "Headed a comprehensive infrastructure and process modernization initiative that established a new support desk and a fully integrated configuration management database (CMDB)."
+        ],
+        "position": "Principal Engineer / Manager / Director",
         "startDate": "2019-02-28",
-        "summary": "\nBuilt a highly available, distributed S3 product with streamlined deplyments using CI/CD and Ansible. \nProvide Tier 3 support for customers and channel partners.\nWrote training materials and held classes on ansible, gitlab, docker, and CI/CD practices.\nDeveloped ansible good practices to streamline new projects.\nActively work with product team to develop new offerings and improve existing\nMantain a lab to support proliferation of automation within the organization.\nTechnical lead for our Gen3 cloud deployemnt utilizing vCloud Director.",
+        "summary": "As the Principal Engineer and Manager at Otava, I spearheaded a broad range of initiatives focused on advancing automation, enhancing infrastructure, and fostering an environment of continuous improvement.",
         "website": "https://www.otava.com"
       },
       {
         "company": "Little Caesars Pizza",
         "endDate": "2018-12-31",
-        "highlights": [],
+        "highlights": [
+          "Maintain CI/CD for all facets of online and mobile ordering.",
+          "Develop ansible and terraform modules for maintenance and growth of our multi-cloud environment (MS Azure and Google cloud).",
+          "Built a modular monitoring and metrics stack utilizing prometheus, influxdb, grafana, alertmanager in a container environment to scale as needed.",
+          "Configured federation between monitoring systems in each virtual environment (VPC).",
+          "Created predictive algorithms to alert on potential problems before they happen.",
+          "Built a container environment to host .netCore applications with auto-scaling to provide cost savings over a standard machine deployment.",
+          "Built several proof of concepts to manage remote store systems (15,000+). Most of these utilized ansible to perform the configuration with a higher level orchestration (salt, puppet, foreman)",
+          "Wrote an ESB consumer and dispatcher in Python to replace windows based services.",
+          "Committed upstream fixes to several open source products we utilize.",
+          "Developed a python based service to scrape metrics from our cloud providers and expose them to a metrics endpoint for prometheus consumption."
+        ],
         "position": "Site Reliability Engineer",
         "startDate": "2018-03-31",
-        "summary": "Maintain CI/CD for all facets of online and mobile ordering\nDevelop ansible and terraform modules for maintenance and growth of our multi-cloud environment (MS Azure and Google cloud).\nBuilt a modular monitoring and metrics stack utilizing prometheus, influxdb, grafana, alertmanager in a container environment to scale as needed.\nConfigured federation between monitoring systems in each virtual environment (VPC)\nCreated predictive algorithms to alert on potential problems before they happen.\nBuilt a container environment to host .netCore applications with auto scaling to provide cost savings over a standard machine deployment.\nBuilt several proof of concepts to manage remote store systems (15,000+). Most of these utilized ansible to perform the configuration with a higher level orchestration (salt, puppet, foreman)\nWrote an ESB consumer and dispatcher in python to replace windows based services.\nCommitted upstream fixes to several open source products we utilize. \nDeveloped a python based service to scrape metrics from our cloud providers and expose them to a metrics endpoint for prometheus consumption.",
+        "summary": "I played a pivotal role in enhancing the reliability and efficiency of online and mobile ordering systems through the maintenance and improvement of continuous integration and delivery processes. My work focused on scaling our operations within a multi-cloud environment and advancing our monitoring capabilities, ensuring preemptive problem identification and cost-effective resource utilization. Furthermore, I led innovative projects to improve remote system management across thousands of store locations and contributed to the refinement of our operational and monitoring frameworks.",
         "website": "https://littlecaesars.com"
       },
       {
         "company": "North American Bancard",
         "endDate": "2018-03-31",
-        "highlights": [],
+        "highlights": [
+          "Responsible for all Linux servers in a multi-company environment. Systems include Ubuntu, CEntOS, and Redhat Enterprise Linux.",
+          "Managed automated builds and deployments using Stash and Bamboo.",
+          "Automated deployments to AWS using bamboo and docker.",
+          "Built a configuration management system using Ansible to deploy, configure, and ensure against configuration drift. I have also developed many other ansible plays for inventory collection, patching, and PCI remediation. Additionally, I wrote plugins to send status of each of these to our central logging system.",
+          "Developed a centralized log management system using Logstash, Elasticsearch, Kabana, and HAProxy to provide a highly available and scalable method of collecting logs from our servers, infrastructure, and applications.",
+          "Implemented a server monitoring system and integrated it with our alerting system and slack.",
+          "Built a server and application metrics dashboard using Graphite, Grafana, and collectd. This has enabled dev, ops, and support people to see historic system metrics and better troubleshoot servers and applications."
+        ],
         "position": "Sr. Linux Engineer",
         "startDate": "2016-09-30",
-        "summary": "Responsible for all Linux servers in a multi company environment. Systems include Ubuntu, CEntOS, and Redhat Enterprise Linux\nManaged automated builds and deployments using Stash and Bamboo.\nAutomated deployments to AWS using bamboo and docker.\nBuilt a configuration management system using Ansible to deploy, configure, and ensure against configuration drift. I have also developed many other ansible plays to perform inventory collection, patching, and PCI remediation. Additionally I wrote plugins to send status of each ef these to our central logging system.\nDeveloped a centralized log management system using Logstash, Elasticsearch, Kabana, and HAProxy to provide a highly available and scalable method of collecting logs from our servers,  infrastructure, and applications. \nImplemented a server monitoring system and integrated it with our alerting system and slack.\nBuilt a server and application metrics dashboard using Graphite, Grafana, and collectd. This has enabled dev, ops, and support people to see historic system metrics and better troubleshoot servers and applications.",
+        "summary": "As the Senior Linux Engineer at North American Bancard, I oversaw all Linux servers across the organization, ensuring seamless operation within a complex multi-company setup. My role emphasized the automation of builds and deployments, the construction of a robust configuration management system to maintain server efficiency, and the implementation of a comprehensive log management solution to ensure high availability and scalability of server, infrastructure, and application log collection. Additionally, I spearheaded the development of server monitoring and application metrics dashboards, significantly improving the capability of development, operations, and support teams to diagnose and troubleshoot system and application issues effectively.",
         "website": "https://www.northamericanbancard.com/"
       },
       {
         "company": "The Auto Club Group",
         "endDate": "2016-06-30",
-        "highlights": [],
+        "highlights": [
+          "Managed a $13MM budget across staffing, licensing, projects, and resources.",
+          "Directed a $3MM data center migration following a company acquisition.",
+          "Cut costs by negotiating better licensing agreements with vendors.",
+          "Reduced server deployment time from a matter of weeks to days.",
+          "Deployed SCCM to facilitate deployment review and approval processes.",
+          "Promoted from team leader to manager."
+        ],
         "position": "Manager, Server Engineering",
-        "startDate": "2013-06-30",
-        "summary": "High level responsibilities:\n- Plan, organize, and direct activities related to server infrastructure services.\n- Manage technology vendor relationships and contract negotiations\n- Provide technical process oversight and assistance to a variety of IT projects\n- IT Security, Audit and Compliance\n- Disaster recovery planning and testing\n\nDirectly Managed the following teams:\n- *Nix Server Teams (AIX, RedHat, Solaris)\n- Microsoft Server Team (AD, System Center, Exchange, Lync/OCS)\n- Virtual Server Team (Vmware, RHEV, Hyper­V)\n- Middleware (Apache, JBoss, IIS)\n\nEnvironment:\n- 3 Data centers 2 in Michigan 1 in Florida\n- 200+ remote sites (file, print, DC)\n- 1000 +/­ Linux servers\n- 1400 +/­ Windows servers\n- 80 +/­ ESX hosts",
-        "website": "https://aaa.com"
-      },
-      {
-        "company": "The Auto Club Group",
-        "endDate": "2013-06-30",
-        "highlights": [],
-        "position": "Sr. IT Consultant / Team Leader",
         "startDate": "2012-09-30",
-        "summary": "Build, Patch, and maintain 1000+ Linux servers\nDevelop standard operating procedures",
+        "summary": "As Manager of Server Engineering at The Auto Club Group, I led the strategic planning, organization, and direction of server infrastructure services, ensuring robust IT security, audit compliance, and efficient disaster recovery processes. My responsibilities included managing key technology vendor relationships, overseeing contract negotiations, and providing technical oversight across diverse IT projects.",
         "website": "https://aaa.com"
       },
       {
         "company": "University of Michigan Health System",
         "endDate": "2012-09-30",
-        "highlights": [],
+        "highlights": [
+          "Provide support for large multi-location enterprise Linux deployment consisting of 200+ Suse Linux Enterprise Servers, 30+ RedHat Servers, 20 Open Enterprise Servers, and a small mix of Netware and Solaris servers.",
+          "Create and maintain server provisioning, build process, and version control for all Linux distributions that we support.",
+          "Provide strategic planning and Project management for the Linux team.",
+          "Implemented Enterprise NTP time services.",
+          "Implemented Veritas Clustering and Storage foundation in order to reduce the number of storage management tools and improve overall performance and availability.",
+          "Tested and reviewed products to provide enterprise log aggregation and search functions.",
+          "Provided direction and a single point of contact for a large data center migration/consolidation project that involved physically moving 150+ servers from an older, outdated data center to our newly built state-of-the-art data center.",
+          "In charge of vendor relationships, product renewals, and purchases for the Linux team."
+        ],
         "position": "Linux Team Lead",
         "startDate": "2008-01-31",
-        "summary": "Maintain 200+ servers (including multiple HA clusters)\nManage licensing and contracts \nNegotiate with vendors\nTake an active roll in committees to determine the best practices and technologies\nLead purchasing efforts (RFP/RPQ/etc.)",
+        "summary": "As Team Lead for Linux Engineering at the University of Michigan Health System, I guided the support and strategic development of a substantial multi-location enterprise Linux deployment, encompassing over 250 servers across various distributions. My duties included creating and maintaining server provisioning and build processes, strategic planning, and project management within the Linux team. I successfully implemented critical infrastructure improvements such as Enterprise NTP services and Veritas Clustering, enhancing performance and availability. I led a significant data center migration and consolidation project, which involved moving more than 150 servers to a new, modern facility",
         "website": "https://med.umich.edu/"
       },
       {
-        "company": "L2 Enterprise",
+        "company": "Subether Networks",
         "endDate": "2012-01-31",
         "highlights": [],
-        "position": "Owner",
+        "position": "President and IT Consultant",
         "startDate": "1997-03-31",
-        "summary": "Systems Security and Management.\nNotable Clients:\nGE Aerospace\nDetroit Beer Company\nHenkel\nDetroit Auto Dealers Association\nEastern Michigan University\nDetroit Opera House\nCity of Troy\nGrid4 Communications",
-        "website": ""
+        "summary": "Founder and IT Consultant of an IT consultancy that served clients in many industries, from the public sector to automotive and aerospace.",
+        "website": "https://subethernetworks.com/"
       },
       {
         "company": "INCAT",
         "endDate": "2008-01-31",
-        "highlights": [],
+        "highlights": [
+          "Upgraded 90+ Solaris servers in multiple locations worldwide to version 10 for Nissan USA.",
+          "Installed and upgraded websphere application servers, WebSphere MQ servers, and WebSphere Portal servers to the latest version on 30 Solaris servers for Nissan USA.",
+          "Built a Redhat server infrastructure to support FEA analysis portals for GE Aerospace/MSC Software.",
+          "Deployed and configured clustering for JBoss application servers at GE Aerospace/MSC Software.",
+          "Provided development support for engineering staff at GE Aerospace while developing a FEA portal while at MSC Software.",
+          "Lead engineer for the development and integration project of the MSC software suite while at MSC software / GE Aerospace."
+        ],
         "position": "Engineering Consultant",
         "startDate": "2007-09-30",
-        "summary": "Designed and installed a large JBoss/Linux environment to support finite element analysis for a large aerospace organization.\nWrote and debugged java code for a large scale portal designed to provide reporting and request tracking to engineering groups.\nUpgraded 100+ Solaris servers across a global network for a large foreign automotive company.",
+        "summary": "Implemented large-scale server (Solaris/JBoss) deployments for major companies in the aerospace and automotive sectors.",
         "website": ""
       },
       {
         "company": "Budco Inc.",
         "endDate": "2007-09-30",
-        "highlights": [],
+        "highlights": [
+          "Lead Engineer on a 'Fork Lift' Infrastructure upgrade (Solaris to Linux).",
+          "Implemented an internal update server (yum) and custom compile rpm's from source to meet our specific needs.",
+          "Compile RedHat Cluster Suite and GFS kernels from source to provide us with a cost-effective method of OS-level clustering and shared filesystems.",
+          "Assist with the installation and configuration of Oracle 10g RAC clusters.",
+          "Implemented a clustered JBoss AS environment (F5 Load balancers in front of an Apache web farm using mod_jk).",
+          "Migrated all local users and service accounts to a Highly Available LDAP directory server that synchronizes users' passwords with Active Directory.",
+          "Provide Linux training to DB and Systems administration teams.",
+          "Designed an Open source monitoring system that complements our existing Compuware Monitoring Suite and displays server health on a graphical representation of our network."
+        ],
         "position": "Linux / Unix Systems Engineer",
         "startDate": "2006-03-31",
-        "summary": "Lead Engineer on a \"Fork Lift\" Infrastructure upgrade (Solaris to Linux)\nImplemented an internal update server (yum) and custom compiled rpm's from source to meet our specific needs\nCompiled RedHat Cluster Suite and GFS kernels from source to provide us with a cost effective method of OS level clustering and shared filesystems\nAssist with installation and configuration of Oracle 10g RAC clusters\nImplemented a clustered JBoss AS environment (F5 Load balancers in front of an Apache web farm using mod_jk)\nMigrated all local users and service accounts to a Highly Available LDAP directory server that synchronizes users passwords with Active Directory\nProvide Linux training to DBA and Systems administration teams\nDesigned an Open source monitoring system that compliments our existing Compuware Monitoring Suite, and displays server health on graphical representation of our network",
+        "summary": "Led and supported infrastructure upgrades including Solaris to Linux migrations, installation of Oracle RAC clusters and workload monitoring systems.",
         "website": ""
-      },
-      {
-        "company": "NuTechs",
-        "endDate": "2006-09-30",
-        "highlights": [],
-        "position": "Unix/Linux Engineer (BUDCO)",
-        "startDate": "2006-03-31",
-        "summary": "Lead Engineer on a \"Fork Lift\" Infrastructure upgrade (Solaris to Linux)\nImplemented an internal update server (yum) and custom compiled rpm's from source to meet our specific needs\nCompiled RedHat Cluster Suite and GFS kernels from source to provide us with a cost effective method of OS level clustering and shared filesystems\nAssist with installation and configuration of Oracle 10g RAC clusters",
-        "website": "https://www.nutechs.com/"
-      },
-      {
-        "company": "Web Elite",
-        "endDate": "2006-03-31",
-        "highlights": [],
-        "position": "Senior Systems Manager",
-        "startDate": "2005-04-30",
-        "summary": "Responsible for generating quotes, planning projects, and providing training to clients\nProvide application, web, email, and database hosting for companies seeking to reduce there IT budget\nEngineered and Built a remote Datacenter using Cisco, IBM, Dell, and Sun Hardware\nManage 29 Red Hat AS3 Servers running a mix of Apache, Oracle, Qmail, DNS, DHCP, Tomcat, Zope, Open LDAP, Subversion, and MySQL\nDesigned an Open source monitoring system that monitors and reports customer SLA, server health, database performance, SPAM, network usage, and web site statistics\nManage 17 Sun servers (Solaris 8, 9, 10) running Sun Java Enterprise, Apache, MySql, Oracle, and Tomcat\nManage 3 Windows 2003 Servers running Exchange 2003, IIS, DHCP, and Netbackup 5.x",
-        "website": "https://www.webelite.com"
-      },
-      {
-        "company": "Coast to Coast Telecom",
-        "endDate": "2002-05-31",
-        "highlights": [],
-        "position": "Data Services Manager",
-        "startDate": "2000-01-31",
-        "summary": "Coordinated an interdepartmental project to convert 60,000 customers to new billing system in order to save the company $3 Million\nNegotiated contracts with vendors to provide the best possible service yet still maintain profitability\nMaintained WAN consisting of 2x OC48, 4x DS3’s, 15x T1’s, and Multiple Cisco routers and switches\nAdministered 5 RedHat 7.x Linux servers (Bind, Apache, Radius, Sendmail)\nProvided 24hr tier 3 support for Collocation, dedicated IP, and remote customer base of 500 users",
-        "website": ""
-      },
-      {
-        "company": "Jay Enn Corporation",
-        "endDate": "2000-01-31",
-        "highlights": [],
-        "position": "IT Manager",
-        "startDate": "1997-03-31",
-        "summary": "Designed and implemented a medium sized office LAN (under 100 users)\nResponsible for day to day system administration tasks in a Windows NT 4.0 environment\nInstalled, configured, and administered Windows NT4 with DHCP, MS Exchange Server 5.5\nEvaluated and recommended new software and hardware, both on the desktop PCs and the servers\nTroubleshooting hardware and software problems on desktop and laptop PCs running Windows 98 and Windows NT Workstation 4.0\nWrote policies and procedures for IT department",
-        "website": "http://www.jayenn.com/"
       }
     ],
     "volunteer": [
@@ -163,10 +197,7 @@
         "startDate": "2021",
         "endDate": "2024",
         "gpa": "",
-        "courses": [
-            "Eiffel",
-            "Intro to theoretical computer science"
-        ]
+        "courses": []
       },
       {
         "institution": "Eidgenössische Technische Hochschule Zürich",
@@ -175,10 +206,7 @@
         "startDate": "2014-12-31",
         "endDate": "2014-12-31",
         "gpa": "",
-        "courses": [
-            "Eiffel",
-            "Intro to theoretical computer science"
-        ]
+        "courses": []
       },
       {
         "institution": "Duke University",
@@ -187,11 +215,7 @@
         "startDate": "2014-12-31",
         "endDate": "2015-12-31",
         "gpa": "",
-        "courses": [
-            "How to Reason and Argue",
-            "Data Analysis and Statistical Inference",
-            "English Composition I"
-        ]
+        "courses": []
       },
       {
         "institution": "IE Business School",
