@@ -20,7 +20,7 @@
         },
         {
           "network": "PDF Resume",
-          "username": "Download",
+          "username": "Download PDF",
           "url": "https://larryludlow.com/Larry_Ludlow.pdf"
         }
       ]
@@ -135,15 +135,6 @@
         "website": "https://med.umich.edu/"
       },
       {
-        "company": "Subether Networks",
-        "endDate": "2012-01-31",
-        "highlights": [],
-        "position": "President and IT Consultant",
-        "startDate": "1997-03-31",
-        "summary": "Founder and IT Consultant of an IT consultancy that served clients in many industries, from the public sector to automotive and aerospace.",
-        "website": "https://subethernetworks.com/"
-      },
-      {
         "company": "INCAT",
         "endDate": "2008-01-31",
         "highlights": [
@@ -176,6 +167,15 @@
         "startDate": "2006-03-31",
         "summary": "Led and supported infrastructure upgrades including Solaris to Linux migrations, installation of Oracle RAC clusters and workload monitoring systems.",
         "website": ""
+      },
+      {
+        "company": "Subether Networks",
+        "endDate": "2012-01-31",
+        "highlights": [],
+        "position": "President and IT Consultant",
+        "startDate": "1997-03-31",
+        "summary": "Founder and IT Consultant of an IT consultancy that served clients in many industries, from the public sector to automotive and aerospace.",
+        "website": "https://subethernetworks.com/"
       }
     ],
     "volunteer": [
@@ -195,7 +195,7 @@
         "area": "Information Technology Management",
         "studyType": "Bachelor",
         "startDate": "2021",
-        "endDate": "2024",
+        "endDate": "",
         "gpa": "",
         "courses": []
       },
@@ -246,7 +246,7 @@
       },
       {
         "institution": "Novell Advanced Technical Training",
-        "area": "Novell Certified Linux Engineer ",
+        "area": "Certifications",
         "studyType": "",
         "startDate": "2009-12-31",
         "endDate": "2011-12-31",
@@ -301,14 +301,16 @@
         "gpa": "",
         "courses": [
             "RHCJA",
-            "RHCE 5"
+            "RHCE 5",
+            "RHCE 4"
+
         ]
       },
       {
         "institution": "Oakland University",
         "area": "Computer Science",
-        "studyType": "Bachelor",
-        "startDate": "1997",
+        "studyType": "",
+        "startDate": "1998",
         "endDate": "2000",
         "gpa": "",
         "courses": []
@@ -392,12 +394,7 @@
         ]
       }
     ],
-    "languages": [
-      {
-        "language": "English",
-        "fluency": "Native Speaker"
-      }
-    ],
+    "languages": [],
     "interests": [],
     "references": [
       {
