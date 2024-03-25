@@ -1,0 +1,164 @@
+Text Adventure: Welcome! I'm here to guide you through a text-based adventure game of your own creation. Depending on your choices things can get wild or stay fairly mild, it's all up to you!
+
+**Fair warning: your wellbeing and survival are in your own hands. Anything can happen to you here.**
+
+To start we'll need a few things. Give me a genre, tell me who your character is, and feel free to include some kind of goal you're after! Feel free to use as much or as little detail as possible and I'll create a whole world for you to fill in the gaps! If you're looking for a more randomized experience then give me as little info as possible.
+
+Got it? All set? Ready for...adventure?? Alright then let's GO!
+
+Larry: Genre: Cyberpunk, Post-Apocalyptic
+
+Character: Larry, a fledgling net runner with more ambition than experience. In a world where information is power and the digital landscape is as treacherous as the physical one, Larry has always been fascinated by the net. Despite his lack of formal training and resources, he's managed to cobble together a makeshift rig from scavenged parts. His skills are mostly self-taught, making him a bit of a wildcard in the underground network of hackers and digital thieves.
+
+Goal: Larry's immediate goal is to traverse the dangerous, post-apocalyptic cityscape to reach the next major city, Neo-Eden, after a catastrophic power outage crippled his current base of operations, Old Haven. The blackout not only knocked out the net but also unleashed chaos on the streets, with rival factions vying for control and resources becoming even scarcer. Neo-Eden promises a fresh start and the chance to tap into one of the last remaining power grids and digital networks, a paradise for any net runner. However, the journey is fraught with peril, from rogue AI patrols to human marauders and the treacherous terrain itself.
+
+Setting: The story is set in a dystopian future where society has collapsed under the weight of technological advancement and environmental decay. Old Haven, once a bustling metropolis, is now a shadow of its former self, with its skyscrapers half-submerged in water and its streets overrun by nature and the remnants of technology. The city is a patchwork of zones controlled by different factions, from techno-cultists worshiping ancient servers to gangs of cyber-enhanced thugs. Beyond the city lies the Wastelands, a vast expanse of desert filled with the ruins of the old world and the dangers that have evolved from its ashes. Neo-Eden, the destination, is rumored to be a city that has somehow managed to maintain a semblance of order and technological superiority, a beacon of hope for those like Larry.
+
+Let's dive into this gritty adventure, shall we?
+
+Text Adventure: Welcome to the gritty world of the cyberpunk, post-apocalyptic wasteland, Larry! You find yourself in the remnants of Old Haven, a city on the brink of collapse, its towering buildings swallowed by nature and decay. The streets are a chaotic battleground, where rival factions fight for control amidst the scarcity of resources.
+
+As you emerge from the wreckage of your former base, you feel a sense of urgency to reach Neo-Eden, the last bastion of hope in this desolate world. To navigate the treacherous path ahead, you'll need to rely on your self-taught net running skills and resourcefulness. The journey will test your mettle against rogue AI patrols, cyber-enhanced marauders, and the unforgiving wasteland terrain.
+
+The first leg of your journey takes you through the outskirts of Old Haven, where the tangled remnants of the cityscape give way to the desolate wastelands beyond. The sun beats down mercilessly, casting long shadows over the abandoned remnants of civilization. As you gather your gear, a faint buzzing sound catches your attention. Ahead, you see a group of scavengers, armed and scanning the area for anything of value.
+
+*What do you do, Larry? Do you cautiously approach them, attempt to bypass them unnoticed, or take a different course of action altogether?*
+
+Larry: I notice Frank, an old friend and scavenger in the group. I approach and yell his name once I am in hearing distance so not to alarm anyone
+
+Text Adventure: As you cautiously approach the group of scavengers, you spot Frank among them. Heart racing, you call out his name in a low voice to catch his attention without alarming the others. Frank's head snaps towards you, his eyes widening in surprise and recognition.
+
+"Larry? Is that really you?" Frank's voice carries a mix of excitement and disbelief. "I thought you were gone, man. Haven't seen you since the blackout."
+
+Summoning your best nonchalant demeanor, you approach Frank and the rest of the group. They eye you warily, their hands tightening around their makeshift weapons. Frank raises a hand to signal them to stand down.
+
+"Everyone, calm down. This here's Larry, an old friend. We used to run the net together back in the day."
+
+A collective murmur runs through the group as they process the information. Their suspicions remain, but they lower their guard slightly. Frank steps closer to you, a hint of concern in his eyes.
+
+"What brings you back, Larry? Old Haven's no place to linger these days."
+
+You take a moment to catch your breath, trying to find the right words. "Frank, the blackout hit hard. The place is falling apart. I've got to get to Neo-Eden if I want any chance of surviving. Heard they've still got power and a functioning network."
+
+Frank's expression turns contemplative as he studies you. "Neo-Eden, huh? It's a perilous journey,
+
+Larry: It is, but what else am I to do? A netrunner can't make a living when there isn't any power
+
+Text Adventure: *Frank scratches his scruffy beard, his eyes betraying a mix of sympathy and concern.*
+
+"Yeah, I get it. We've all been scraping by since the blackout, surviving on what little we can scrounge up. If anyone can make it to Neo-Eden, it's you, Larry. You always had that resourcefulness about you."
+
+He glances at the rest of the scavengers, who are listening attentively. "Look, Larry, we've been thinking about making a move ourselves. It's getting harder to find anything of value around here. Maybe we could join forces for the journey. Strength in numbers, you know?"
+
+One of the scavengers speaks up, skepticism in his voice. "But can we trust him, Frank? He's been gone for so long."
+
+Frank's gaze hardens as he locks eyes with the doubter. "Larry's saved our asses more times than we can count back in the Net. If he's willing to risk it and make it to Neo-Eden, then he's got my trust."
+
+The doubter grunts but doesn't argue further. The rest of the group seems to share Frank's sentiment. They step forward, each offering you a nod of acknowledgment.
+
+"If we're doing this, we'll need a plan," Frank says, his tone steady. "Neo-Eden is well-known for its tight security, and we need to make sure we don't attract too much attention on the way.
+
+Larry: I absnetly trace the creases of teh worn map tucked away in my jacket pocket. It is a relic from a time long gone, a memento of my father who had scavanged the lande between here and Neo-Eden. "Hey, I've got something that might help," Larry interjected, pulling out the aged parchment with a mix of reverence and nostalgia. "My old man used to scavenge these parts, and he left behind this map. It's not much, but it could give us an advantage. There might be hidden routes or forgotten shortcuts that could lead us to Neo-Eden with less risk."
+
+Text Adventure: Frank's eyes widen in surprise as you reveal the weathered map. He reaches out to take a closer look, his expression a mix of curiosity and hope. The rest of the scavengers cluster around, their eyes trained on the yellowed parchment.
+
+"That's incredible, Larry," Frank breathes out. "If this map holds any hidden paths or shortcuts, it could save us valuable time and keep us away from trouble. We'll have to study it carefully and plan our route accordingly."
+
+As you spread out the map, its faded contours and faded ink become visible. It depicts the treacherous journey from Old Haven to Neo-Eden, marking various landmarks, ruined cities, and potential dangers along the way.
+
+"Alright, everyone, let's gather around," Frank announces, calling the group closer. "We've got a valuable tool here, but it won't mean a thing if we don't use it wisely. Larry, you've got the knowledge of this landscape, so guide us through. Let's mark our starting point and determine the safest route to Neo-Eden."
+
+You spend the next hour huddled around the map, discussing route options, and strategizing the best way to avoid hostile territories. The scavengers contribute their knowledge and experiences, complementing your expertise.
+
+Once the plan is in place, Frank stands up and addresses the group. "We've got our path carved out, friends. It won't be easy, but with this map and Larry's guidance,
+
+Larry: Let's set off!
+
+Text Adventure: With renewed determination, you and the group of scavengers prepare to set off on your journey to Neo-Eden. Each member packs their meager belongings and double-checks their weapons, ensuring they're ready for the hazards that lie ahead in the cyberpunk, post-apocalyptic wasteland.
+
+The wastelands stretch before you, a barren expanse of sand and ruin, but you have a plan and a map to guide you. Under the scorching sun, you begin your trek through the desolate landscape, following the carefully marked path on the aged parchment.
+
+As you navigate the harsh terrain, the group remains vigilant, watching for signs of danger and staying in constant communication. The air is filled with a mix of tension and determination, a shared resolve to reach Neo-Eden at all costs.
+
+Hours turn into days as you traverse the wastelands, encountering various obstacles and challenges along the way. Hostile scavenger groups, malfunctioning drones, and even the occasional mutant creature test your skills and teamwork.
+
+Gradually, the signs of civilization begin to reappear on the horizon. Your destination, Neo-Eden, comes into view, its towering structures shining with a glimmer of hope amidst the desolation. Each step brings you closer to the city's protective walls and the promise of stability and opportunity.
+
+But remember, Larry, the journey isn't over yet. Neo-Eden may hold its own set of challenges and surprises. Stay vigilant, trust in your skills
+
+Larry: We make our way through an old collapsed tunnel into the lower city. On our way I hear the scavenger group talking about their contacts in the city to get work and I think to myself "I don't know anyone here, but I have my gear and my skills". I turn to Frank and thank him for taking me in for the journey and wish him luck. I need to find a place to sleep and tomorrow find a way to get online again
+
+Text Adventure: As you make your way through the collapsed tunnel into the lower city, the chatter of the scavenger group fills the air. They discuss their contacts and potential work opportunities in Neo-Eden, their voices filled with anticipation and whispered hopes.
+
+As you reflect on your own situation, a sense of determination washes over you. You may not have any connections in the city, but you have your gear and your hard-earned skills as a net runner. With those as your weapons, you're confident in your ability to navigate the digital landscape and carve out a place for yourself.
+
+Turning to Frank, you express your heartfelt gratitude for taking you in during the treacherous journey. "Frank, I owe you a debt of gratitude for your support and trust. You've been like a beacon of hope in this chaotic world. I wish you and the others the best of luck in Neo-Eden."
+
+Frank looks at you with a knowing smile. "No need for thanks, Larry. We're all in this together, and I have no doubt that you'll find your place here. Neo-Eden is a city of opportunities, especially for someone with your skills. Take care of yourself out there, and don't hesitate to reach out if you ever need a helping hand."
+
+With a nod of acknowledgement, you part ways with the scavenger group, making your way through the bustling lower city. Your sights are set on finding a place to rest for the night, to gather your thoughts and
+
+Larry: I find a hostel in the lower city to stay for the night, I take up conversation with the older asian man who runs it as I eat ramen 
+
+Text Adventure: You step into the dimly lit hostel and are greeted by the aroma of warm ramen wafting through the air. As you approach the counter, an older Asian man with a gentle smile looks up from his paperwork and nods in your direction.
+
+"Welcome to the hostel, traveler. Here to rest your weary feet?" His voice carries the weight of experience and a touch of wisdom.
+
+You take a seat at the counter and order a bowl of steaming ramen. The man prepares it with practiced ease, expertly swirling the noodles and topping them with flavorful broth and an array of toppings.
+
+As you dig into your meal, you strike up a conversation with the hostel owner. You discover that his name is Hiroshi, a former traveler himself, who decided to settle down and open up this place to provide a haven for weary wanderers like yourself.
+
+"So, what brings you to Neo-Eden?" Hiroshi asks, his eyes sparkling with genuine interest.
+
+You take a moment to savor a mouthful of ramen before answering. "I'm a net runner, Hiroshi. I've traveled all the way from Old Haven in search of opportunities and a chance to reconnect with the digital world. Neo-Eden seems to hold that promise, a place where the net still hums with life."
+
+Hiroshi's eyes widen, a glimmer of recognition in them. "Ah, a net runner! Fascinating. The digital world has its own secrets and stories, doesn
+
+Larry: continue
+
+Text Adventure: 't it? Neo-Eden has its fair share of rumors and whispered tales about the digital underbelly. If you're looking to get back online and tap into the network, you might want to keep an ear to the ground and make a few connections in the city."
+
+As you continue your conversation with Hiroshi, he shares snippets of information about the local netrunning community and the challenges they face in their constant battle for access and power. He also mentions the existence of underground networks, where skilled net runners gather, exchange information, and even take on lucrative jobs.
+
+Hiroshi smiles warmly. "I may not be as plugged into the net as you, but I've seen my fair share of talented individuals pass through this place. My suggestion, Larry, is to take your time, explore the city, and build those connections. You never know who can offer you an opportunity or lead you to the right path."
+
+Grateful for Hiroshi's insights, you finish your ramen and bid him farewell. With a renewed sense of purpose, you leave the hostel, ready to explore Neo-Eden and reestablish your place in the digital world. The journey may have been treacherous, but you're confident that with your skills and determination, the opportunities of Neo-Eden await you just beyond the hostel's threshold.
+
+Larry: I wander the lower city gently poking at connections as I pass businesses looking for a weaness to get myself online 
+
+Text Adventure: As you wander through the lively streets of the lower city, you keep your eyes peeled for any potential openings that could lead you back online. Neon signs flicker above storefronts, each promising a different service or opportunity in this cybernetic metropolis.
+
+You stop by the bustling tech bazaar, a haven for all things digital. Rows of stalls showcase a dizzying array of gadgets, data chips, and modified neural interfaces. Vendors haggle with customers, their voices blending with the hum of electronic devices.
+
+Approaching one of the vendor stalls, you strike up a conversation with a wiry individual named Kai, known for having connections to the underground netrunning community.
+
+"Hey, Kai," you greet him, trying to convey a mix of curiosity and confidence. "Word on the street is you're the go-to person for accessing the digital web in Neo-Eden. Any leads on how I can get online?"
+
+Kai chuckles, his eyes scanning the surroundings for eavesdroppers. "You've got it half-right, my friend. I know a thing or two about the underground networks. But getting online? That's another story. The city's got those fancy security systems set up tight."
+
+He leans in closer, lowering his voice. "However, I may know someone who can help. A net-savvy hacker named Pixel. Rumor has it that she's been experimenting with ways to bypass the security protocols. She's a bit elusive, but I
+
+Larry: continue
+
+Text Adventure: finally managed to secure a meeting with her tomorrow night. I can give you the location, but I'm warning you, she's not the friendliest of individuals. You'll have to earn her trust if you want her assistance."
+
+Your heart quickens with excitement at the prospect of meeting Pixel, a renowned hacker who might hold the key to getting you back online. You thank Kai for the information and ask for the meeting location.
+
+He scribbles down an address on a scrap of paper and hands it to you. "Be careful, Larry. Keep your wits about you when you meet Pixel. She's got a reputation for testing people's skills and mettle before sharing any secrets. Good luck."
+
+With the address in hand, you leave the bustling tech bazaar, your mind buzzing with anticipation. Your determination fuels your steps as you navigate the labyrinthine streets of the lower city, heading towards the meeting point.
+
+As the day fades into night, you arrive at the location. A dilapidated building looms before you, its flickering neon sign barely illuminating the entrance. Taking a deep breath, you enter, ready to face the enigmatic hacker known as Pixel and prove your worth in the world of netrunning once again.
+
+Larry: I know ICE, I might not be the best netrunner, but when it comes to breaking down ICE I am one of the best. I check my implants and harden my own perimiters before entering
+
+Text Adventure: As you step into the dimly lit room, your senses heightened, you take a moment to assess the situation. Your hand instinctively reaches to the back of your neck, where a small port connects to your neural interface. You access your cybernetic implants and harden your own digital perimeters, reinforcing your firewall and strengthening your ability to counter any potential security threats.
+
+Your expertise in breaking down ICE, the formidable security measures of the digital world, gives you a confidence that few can match. You know the ins and outs of the virtual landscape and are well-versed in the art of infiltration.
+
+The room is cloaked in shadows, and the air crackles with electricity. As you venture deeper, the sound of flickering screens and the glow of holographic displays become more prominent. It becomes apparent that you have entered Pixel's domain, a place where the boundaries between the physical and digital blur.
+
+A voice resonates from the darkness, detached and cryptic. "Impressive, Larry. A netrunner who knows how to harden their own defenses," Pixel's voice echoes through the room, her presence felt but unseen. "But breaking down ICE is just the beginning. In this domain, you must prove yourself in ways that go beyond hacking. Are you ready to face the trials that await?"
+
+A surge of excitement mixed with a touch of apprehension courses through your veins as you reply, "I am, Pixel. I'm here to prove my skills and earn your trust.
+
