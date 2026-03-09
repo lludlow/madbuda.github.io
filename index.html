@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larry Ludlow // Principal Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg:      #050508;
+            --bg2:     #0a0a12;
+            --bg3:     #0f0f1a;
+            --cyan:    #00e5ff;
+            --cyan-dim: rgba(0, 229, 255, 0.12);
+            --magenta: #ff2d78;
+            --amber:   #ffd60a;
+            --white:   #e8e8f0;
+            --gray:    #6b6b8a;
+            --border:  rgba(0, 229, 255, 0.18);
+        }
+
+```
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+        background: var(--bg);
+        color: var(--white);
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    /* scanlines */
+    body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(0,0,0,0.07) 2px,
+            rgba(0,0,0,0.07) 4px
+        );
+        pointer-events: none;
+        z-index: 9998;
+    }
+
+    /* dot grid */
+    body::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background-image: radial-gradient(rgba(0, 229, 255, 0.06) 1px, transparent 1px);
+        background-size: 30px 30px;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    /* ── NAV ── */
+    nav {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 1000;
+        height: 58px;
+        background: rgba(5,5,8,0.88);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2.5rem;
+    }
+
+    .nav-logo {
+        font-family: 'Orbitron', monospace;
+        font-size: 0.8rem;
+        font-weight: 900;
+        color: var(--cyan);
+        text-decoration: none;
+        letter-spacing: 0.25em;
+    }
+
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.7rem;
+        color: var(--gray);
+        text-decoration: none;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        transition: color 0.15s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--cyan); }
+
+    /* ── LAYOUT ── */
+    main { position: relative; z-index: 1; padding-top: 58px; }
+    .container { max-width: 920px; margin: 0 auto; padding: 0 2rem; }
+    section { padding: 5.5rem 0; }
+
+    /* ── HERO ── */
+    #hero {
+        min-height: calc(100vh - 58px);
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* decorative geometry */
+    .geo {
+        position: absolute;
+        pointer-events: none;
+        border: 1px solid rgba(0,229,255,0.07);
+    }
+    .geo-1 { width: 420px; height: 420px; top: -60px; right: -80px; transform: rotate(20deg); }
+    .geo-2 { width: 260px; height: 260px; top: 80px; right: 60px; transform: rotate(40deg); border-color: rgba(255,45,120,0.05); }
+    .geo-3 { width: 120px; height: 120px; bottom: 120px; right: 200px; transform: rotate(10deg); border-color: rgba(255,214,10,0.06); }
+
+    .hero-content { position: relative; z-index: 1; }
+
+    .status-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.68rem;
+        color: var(--cyan);
+        letter-spacing: 0.15em;
+        margin-bottom: 1.5rem;
+    }
+    .status-dot {
+        width: 7px; height: 7px;
+        border-radius: 50%;
+        background: var(--cyan);
+        animation: pulse 2.2s infinite;
+    }
+    @keyframes pulse {
+        0%,100% { opacity:1; box-shadow: 0 0 0 0 rgba(0,229,255,0.5); }
+        60%      { opacity:0.7; box-shadow: 0 0 0 7px rgba(0,229,255,0); }
+    }
+
+    .hero-eyebrow {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.72rem;
+        color: rgba(232,232,240,0.45);
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+    }
+    .hero-eyebrow::before { content: '> '; color: var(--magenta); }
+
+    .hero-name {
+        font-family: 'Orbitron', monospace;
+        font-size: clamp(2.8rem, 7.5vw, 5.8rem);
+        font-weight: 900;
+        color: var(--white);
+        letter-spacing: -0.01em;
+        line-height: 1;
+        margin-bottom: 0.2rem;
+        position: relative;
+        display: inline-block;
+    }
+
+    /* glitch layers */
+    .hero-name::before,
+    .hero-name::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+    }
+    .hero-name::before {
+        color: var(--cyan);
+        animation: glitch-a 5s infinite;
+    }
+    .hero-name::after {
+        color: var(--magenta);
+        animation: glitch-b 5s infinite;
+    }
+    @keyframes glitch-a {
+        0%,88%,100% { clip-path: inset(100% 0 0 0); transform: translate(0); }
+        90%  { clip-path: inset(8%  0 87% 0); transform: translate(-3px,  1px); }
+        92%  { clip-path: inset(55% 0 25% 0); transform: translate( 3px, -1px); }
+        94%  { clip-path: inset(28% 0 62% 0); transform: translate(-2px,  2px); }
+        97%  { clip-path: inset(76% 0 8%  0); transform: translate( 2px, -1px); }
+    }
+    @keyframes glitch-b {
+        0%,86%,100% { clip-path: inset(100% 0 0 0); transform: translate(0); }
+        88%  { clip-path: inset(42% 0 43% 0); transform: translate( 3px, -2px); }
+        91%  { clip-path: inset(4%  0 82% 0); transform: translate(-3px,  1px); }
+        93%  { clip-path: inset(68% 0 18% 0); transform: translate( 2px,  2px); }
+        96%  { clip-path: inset(18% 0 72% 0); transform: translate(-1px, -1px); }
+    }
+
+    .hero-title {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: clamp(0.78rem, 1.6vw, 1rem);
+        color: var(--cyan);
+        letter-spacing: 0.18em;
+        margin: 1.2rem 0 2rem;
+        opacity: 0.9;
+    }
+
+    .hero-summary {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: rgba(232,232,240,0.65);
+        max-width: 580px;
+        line-height: 1.75;
+        margin-bottom: 2.8rem;
+    }
+
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.65rem 1.4rem;
+        border: 1px solid var(--cyan);
+        color: var(--cyan);
+        text-decoration: none;
+        transition: all 0.18s;
+        position: relative;
+        overflow: hidden;
+    }
+    .btn::before {
+        content: '';
+        position: absolute;
+        top: 0; left: -100%;
+        width: 100%; height: 100%;
+        background: var(--cyan-dim);
+        transition: left 0.18s;
+    }
+    .btn:hover::before  { left: 0; }
+    .btn:hover          { color: #fff; }
+    .btn-muted          { border-color: rgba(107,107,138,0.5); color: var(--gray); }
+    .btn-muted::before  { background: rgba(107,107,138,0.08); }
+    .btn-muted:hover    { border-color: var(--white); color: var(--white); }
+
+    /* ── SECTION HEADER ── */
+    .sec-head {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    .sec-num {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.65rem;
+        color: var(--magenta);
+        letter-spacing: 0.3em;
+    }
+    .sec-title {
+        font-family: 'Orbitron', monospace;
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: 0.06em;
+    }
+    .sec-rule {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(to right, var(--border), transparent);
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 260px;
+        gap: 4rem;
+        align-items: start;
+    }
+    .about-body {
+        font-size: 1.05rem;
+        font-weight: 300;
+        color: rgba(232,232,240,0.75);
+        line-height: 1.8;
+    }
+    .about-body p + p { margin-top: 1.2rem; }
+
+    .about-sidebar { display: flex; flex-direction: column; gap: 1.4rem; }
+    .sb-item { border-left: 2px solid var(--magenta); padding-left: 1rem; }
+    .sb-label {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.6rem;
+        color: var(--gray);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 0.15rem;
+    }
+    .sb-val {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white);
+    }
+
+    /* ── EXPERIENCE ── */
+    .exp-stack { display: flex; flex-direction: column; }
+
+    .exp-card {
+        border: 1px solid var(--border);
+        border-bottom: none;
+        padding: 2rem 2rem 2rem 2.4rem;
+        background: var(--bg2);
+        position: relative;
+        transition: background 0.18s, border-color 0.18s;
+    }
+    .exp-card:last-child { border-bottom: 1px solid var(--border); }
+
+    .exp-card::before {
+        content: '';
+        position: absolute;
+        left: 0; top: 0; bottom: 0;
+        width: 3px;
+        background: transparent;
+        transition: background 0.18s;
+    }
+    .exp-card.current::before { background: var(--cyan); }
+    .exp-card:not(.current):hover::before { background: rgba(0,229,255,0.4); }
+    .exp-card:hover { background: var(--bg3); border-color: rgba(0,229,255,0.35); }
+
+    .exp-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 0.9rem;
+        flex-wrap: wrap;
+    }
+    .exp-co {
+        font-family: 'Orbitron', monospace;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--cyan);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 0.25rem;
+    }
+    .exp-role {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--white);
+        margin-bottom: 0.15rem;
+    }
+    .exp-loc {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.65rem;
+        color: var(--gray);
+    }
+    .exp-dates {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.68rem;
+        color: var(--amber);
+        letter-spacing: 0.08em;
+        white-space: nowrap;
+        padding-top: 0.2rem;
+    }
+
+    .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
+    .exp-bullets li {
+        font-size: 0.95rem;
+        font-weight: 400;
+        color: rgba(232,232,240,0.7);
+        line-height: 1.55;
+        padding-left: 1.3rem;
+        position: relative;
+    }
+    .exp-bullets li::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        color: var(--magenta);
+        font-size: 0.65rem;
+        top: 0.25rem;
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 1.25rem;
+    }
+    .skill-cat {
+        border: 1px solid var(--border);
+        padding: 1.4rem;
+        background: var(--bg2);
+        position: relative;
+        transition: border-color 0.18s;
+    }
+    .skill-cat::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(to right, var(--cyan), transparent);
+    }
+    .skill-cat:hover { border-color: rgba(0,229,255,0.35); }
+    .skill-cat-name {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.65rem;
+        color: var(--cyan);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .skill-tag {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.68rem;
+        padding: 0.2rem 0.55rem;
+        border: 1px solid rgba(0,229,255,0.18);
+        color: rgba(232,232,240,0.65);
+        background: rgba(0,229,255,0.03);
+        letter-spacing: 0.04em;
+        transition: border-color 0.15s, color 0.15s;
+    }
+    .skill-tag:hover { border-color: var(--cyan); color: var(--white); }
+
+    /* exp project chips */
+    .exp-projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 1.2rem;
+        padding-top: 1.1rem;
+        border-top: 1px solid var(--border);
+    }
+    .exp-proj-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        border: 1px solid var(--border);
+        background: rgba(0,229,255,0.03);
+        padding: 0.3rem 0.7rem 0.3rem 0.45rem;
+        text-decoration: none;
+        transition: border-color 0.15s, background 0.15s;
+    }
+    .exp-proj-chip:hover {
+        border-color: rgba(0,229,255,0.4);
+        background: rgba(0,229,255,0.07);
+    }
+    .epc-lang {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.55rem;
+        padding: 0.1rem 0.35rem;
+        border: 1px solid;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    .epc-name {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.68rem;
+        color: var(--white);
+        letter-spacing: 0.03em;
+    }
+    .epc-desc {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 0.75rem;
+        color: var(--gray);
+        font-weight: 400;
+    }
+
+    /* certs */
+    .cert-row { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 2.5rem; }
+    .cert-tag {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.7rem;
+        padding: 0.35rem 0.9rem;
+        border: 1px solid rgba(255,214,10,0.28);
+        color: var(--amber);
+        background: rgba(255,214,10,0.04);
+        letter-spacing: 0.04em;
+    }
+
+    /* ── PROJECTS ── */
+    .proj-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.25rem;
+    }
+    .proj-card {
+        border: 1px solid var(--border);
+        background: var(--bg2);
+        padding: 1.6rem;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        position: relative;
+        transition: background 0.18s, border-color 0.18s, transform 0.18s;
+    }
+    .proj-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(to right, var(--magenta), transparent);
+        opacity: 0;
+        transition: opacity 0.18s;
+    }
+    .proj-card:hover {
+        background: var(--bg3);
+        border-color: rgba(255,45,120,0.35);
+        transform: translateY(-2px);
+    }
+    .proj-card:hover::before { opacity: 1; }
+
+    .proj-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .proj-name {
+        font-family: 'Orbitron', monospace;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: 0.05em;
+    }
+    .proj-lang {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.6rem;
+        padding: 0.15rem 0.5rem;
+        letter-spacing: 0.08em;
+        border: 1px solid;
+    }
+    .lang-go      { color: #00acd7; border-color: rgba(0,172,215,0.35); }
+    .lang-python  { color: #f7c948; border-color: rgba(247,201,72,0.35); }
+    .lang-ps      { color: #5391fe; border-color: rgba(83,145,254,0.35); }
+    .lang-c       { color: #a8b9cc; border-color: rgba(168,185,204,0.35); }
+
+    .proj-desc {
+        font-size: 0.88rem;
+        font-weight: 300;
+        color: rgba(232,232,240,0.6);
+        line-height: 1.6;
+        flex: 1;
+    }
+    .proj-foot { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; }
+    .proj-tag {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.6rem;
+        padding: 0.15rem 0.5rem;
+        border: 1px solid rgba(255,45,120,0.2);
+        color: rgba(255,45,120,0.7);
+        background: rgba(255,45,120,0.04);
+        letter-spacing: 0.06em;
+    }
+
+    /* ── CONTACT ── */
+    .contact-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    /* ── FOOTER ── */
+    footer {
+        border-top: 1px solid var(--border);
+        padding: 1.8rem 2rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    .footer-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 0.62rem;
+        color: var(--gray);
+        letter-spacing: 0.25em;
+    }
+
+    /* custom scrollbar */
+    ::-webkit-scrollbar          { width: 4px; }
+    ::-webkit-scrollbar-track    { background: var(--bg); }
+    ::-webkit-scrollbar-thumb    { background: rgba(0,229,255,0.2); }
+    ::-webkit-scrollbar-thumb:hover { background: var(--cyan); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 760px) {
+        .about-grid   { grid-template-columns: 1fr; gap: 2rem; }
+        .nav-links    { display: none; }
+        .hero-name    { font-size: 2.6rem; }
+        .exp-card     { padding: 1.5rem 1.5rem 1.5rem 1.8rem; }
+    }
+</style>
+```
+
+</head>
+<body>
+
+<nav>
+    <a href="#hero" class="nav-logo">LL://</a>
+    <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+```
+<!-- HERO -->
+<section id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="geo geo-1"></div>
+            <div class="geo geo-2"></div>
+            <div class="geo geo-3"></div>
+
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span id="status-text"></span>
+            </div>
+
+            <div class="hero-eyebrow" id="eyebrow-text"></div>
+
+            <h1 class="hero-name" data-text="LARRY LUDLOW">LARRY LUDLOW</h1>
+
+            <div class="hero-title">Infrastructure Architect &nbsp;·&nbsp; Systems Engineer &nbsp;·&nbsp; Builder</div>
+
+            <p class="hero-summary">
+                25+ years designing, building, and operating infrastructure at scale —
+                from bare metal to multi-cloud, from team lead to principal.
+                I solve hard problems and build the things that other people build on.
+            </p>
+
+            <div class="hero-actions">
+                <a href="/cdn-cgi/l/email-protection#bad6d6cfded6d5cdfaddd7dbd3d694d9d5d7" class="btn"><span class="__cf_email__" data-cfemail="620e0e17060e0d1522050f030b0e4c010d0f">[email&#160;protected]</span></a>
+                <a href="https://www.linkedin.com/in/lludlow2/" target="_blank" class="btn btn-muted">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="container">
+        <div class="sec-head">
+            <span class="sec-num">01</span>
+            <h2 class="sec-title">EXPERIENCE</h2>
+            <div class="sec-rule"></div>
+        </div>
+
+        <div class="exp-stack">
+
+            <div class="exp-card current">
+                <div class="exp-top">
+                    <div>
+                        <div class="exp-co">Verge.io</div>
+                        <div class="exp-role">Principal Engineer</div>
+                        <div class="exp-loc">Ann Arbor, MI</div>
+                    </div>
+                    <div class="exp-dates">APR 2024 — PRESENT</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Resolve critical Tier 3 customer issues across virtualization, storage, and networking layers of the VergeOS platform</li>
+                    <li>Authored comprehensive technical documentation and produced video tutorials; architected and automated deployment of the VergeOS documentation site</li>
+                    <li>Built and maintain the platform's open-source tooling ecosystem — CLI, SDKs, and observability integrations (see below)</li>
+                    <li>Contributed to the Verge.io Terraform provider, expanding infrastructure-as-code capabilities</li>
+                    <li>Created automated testing framework and partnered with vendors for hardware validation; contributed to upstream KVM Windows guest drivers</li>
+                    <li>Design and implement VergeOS solutions for multi-tenant, edge computing, and private cloud deployments</li>
+                </ul>
+                <div class="exp-projects">
+                    <a class="exp-proj-chip" href="https://github.com/verge-io/vrg" target="_blank">
+                        <span class="epc-lang lang-python">py</span>
+                        <span class="epc-name">vrg</span>
+                        <span class="epc-desc">CLI · 200+ commands</span>
+                    </a>
+                    <a class="exp-proj-chip" href="https://github.com/verge-io/vergeos-exporter" target="_blank">
+                        <span class="epc-lang lang-go">go</span>
+                        <span class="epc-name">vergeos-exporter</span>
+                        <span class="epc-desc">Prometheus · Grafana</span>
+                    </a>
+                    <a class="exp-proj-chip" href="https://github.com/verge-io/pyVergeOS" target="_blank">
+                        <span class="epc-lang lang-python">py</span>
+                        <span class="epc-name">pyVergeOS</span>
+                        <span class="epc-desc">Python SDK</span>
+                    </a>
+                    <a class="exp-proj-chip" href="https://github.com/verge-io/PSVergeOS" target="_blank">
+                        <span class="epc-lang lang-ps">ps</span>
+                        <span class="epc-name">PSVergeOS</span>
+                        <span class="epc-desc">PowerShell module</span>
+                    </a>
+                    <a class="exp-proj-chip" href="https://github.com/verge-io/kvm-guest-drivers-windows" target="_blank">
+                        <span class="epc-lang lang-c">c</span>
+                        <span class="epc-name">kvm-guest-drivers-windows</span>
+                        <span class="epc-desc">Upstream contribution</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-top">
+                    <div>
+                        <div class="exp-co">Otava</div>
+                        <div class="exp-role">Principal Engineer / Manager / Director</div>
+                        <div class="exp-loc">Ann Arbor, MI</div>
+                    </div>
+                    <div class="exp-dates">DEC 2018 — FEB 2023</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Architected enterprise Ansible automation framework managing Cumulus network devices across multiple data centers</li>
+                    <li>Designed and deployed a highly available, distributed S3-compatible storage service as a new managed offering</li>
+                    <li>Integrated 3 client portals via microservices architecture, reducing billing operations by an estimated 95%</li>
+                    <li>Spearheaded infrastructure modernization establishing integrated support desk and CMDB across the org</li>
+                    <li>Created training programs on Ansible, GitLab, Docker, and CI/CD; established automation standards org-wide</li>
+                </ul>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-top">
+                    <div>
+                        <div class="exp-co">Little Caesars Corp.</div>
+                        <div class="exp-role">Site Reliability Engineer</div>
+                        <div class="exp-loc">Detroit, MI</div>
+                    </div>
+                    <div class="exp-dates">FEB 2018 — DEC 2018</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Maintained CI/CD pipelines supporting all online and mobile ordering platforms for nationwide operations</li>
+                    <li>Developed Ansible and Terraform modules for multi-cloud provisioning across Azure and GCP</li>
+                    <li>Architected modular observability stack (Prometheus, InfluxDB, Grafana, AlertManager) with predictive alerting algorithms and cross-VPC federation</li>
+                    <li>Designed proof-of-concepts for managing 15,000+ remote store systems via Ansible with Puppet/Salt orchestration</li>
+                </ul>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-top">
+                    <div>
+                        <div class="exp-co">North American Bancard</div>
+                        <div class="exp-role">Sr. Linux Engineer</div>
+                        <div class="exp-loc">Troy, MI</div>
+                    </div>
+                    <div class="exp-dates">SEP 2016 — FEB 2018</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Architected Ansible-based configuration management system for deployment, drift prevention, and PCI compliance remediation</li>
+                    <li>Built highly available ELK stack log management platform with HAProxy for enterprise-wide collection across servers and applications</li>
+                    <li>Implemented CI/CD pipelines and containerized deployments to AWS; delivered Graphite/Grafana metrics dashboards for ops and dev teams</li>
+                </ul>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-top">
+                    <div>
+                        <div class="exp-co">Auto Club Group (AAA)</div>
+                        <div class="exp-role">Manager, Server Engineering</div>
+                        <div class="exp-loc">Dearborn, MI</div>
+                    </div>
+                    <div class="exp-dates">SEP 2012 — JUN 2016</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Directed server infrastructure across 3 data centers and 200+ remote sites — 2,400+ servers, 80+ ESX hosts</li>
+                    <li>Led four engineering teams: Unix/Linux, Microsoft, Virtualization, and Middleware platforms</li>
+                    <li>Managed $13M budget; directed $3M data center migration following corporate acquisition</li>
+                </ul>
+            </div>
+
+            <div class="exp-card">
+                <div class="exp-top">
+                    <div>
+                        <div class="exp-co">University of Michigan Health System</div>
+                        <div class="exp-role">Linux Team Lead</div>
+                        <div class="exp-loc">Ann Arbor, MI</div>
+                    </div>
+                    <div class="exp-dates">JAN 2008 — SEP 2012</div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Led support and strategic development of 250+ server multi-location enterprise Linux deployment</li>
+                    <li>Directed data center migration and consolidation of 150+ servers to a newly built facility</li>
+                    <li>Implemented Veritas Clustering, enterprise NTP services, and log aggregation platform</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <div class="sec-head">
+            <span class="sec-num">02</span>
+            <h2 class="sec-title">SKILLS</h2>
+            <div class="sec-rule"></div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-cat">
+                <div class="skill-cat-name">Infrastructure / HCI</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">VergeOS</span>
+                    <span class="skill-tag">VMware</span>
+                    <span class="skill-tag">Proxmox</span>
+                    <span class="skill-tag">KVM</span>
+                    <span class="skill-tag">vCloud Director</span>
+                    <span class="skill-tag">PowerVM</span>
+                    <span class="skill-tag">Hyper-V</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Linux / Unix</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">RHEL</span>
+                    <span class="skill-tag">Ubuntu</span>
+                    <span class="skill-tag">Fedora</span>
+                    <span class="skill-tag">SLES</span>
+                    <span class="skill-tag">Debian</span>
+                    <span class="skill-tag">AIX</span>
+                    <span class="skill-tag">Solaris</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Automation & DevOps</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Ansible</span>
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">Puppet</span>
+                    <span class="skill-tag">SaltStack</span>
+                    <span class="skill-tag">Helm</span>
+                    <span class="skill-tag">Argo CD</span>
+                    <span class="skill-tag">Flux</span>
+                    <span class="skill-tag">GitLab CI</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Languages</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Go</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Rust</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Cloud</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">Private Cloud</span>
+                    <span class="skill-tag">Multi-cloud</span>
+                    <span class="skill-tag">Edge Computing</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Observability</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Prometheus</span>
+                    <span class="skill-tag">Grafana</span>
+                    <span class="skill-tag">ELK Stack</span>
+                    <span class="skill-tag">InfluxDB</span>
+                    <span class="skill-tag">AlertManager</span>
+                    <span class="skill-tag">Graphite</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Containers & Orchestration</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Rancher</span>
+                    <span class="skill-tag">Docker Swarm</span>
+                    <span class="skill-tag">containerd</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <div class="skill-cat-name">Networking & Storage</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Cumulus Linux</span>
+                    <span class="skill-tag">BGP / OSPF</span>
+                    <span class="skill-tag">S3-compatible</span>
+                    <span class="skill-tag">Ceph</span>
+                    <span class="skill-tag">NFS / iSCSI</span>
+                    <span class="skill-tag">HAProxy</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cert-row">
+            <span class="cert-tag">RHCE</span>
+            <span class="cert-tag">RHCJA</span>
+            <span class="cert-tag">Novell Certified Linux Engineer</span>
+            <span class="cert-tag">HP BladeSystem Administration</span>
+            <span class="cert-tag">Veritas Storage Foundation + HA</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="sec-head">
+            <span class="sec-num">03</span>
+            <h2 class="sec-title">CONTACT</h2>
+            <div class="sec-rule"></div>
+        </div>
+        <div class="contact-row">
+            <a href="/cdn-cgi/l/email-protection#127e7e67767e7d6552757f737b7e3c717d7f" class="btn"><span class="__cf_email__" data-cfemail="335f5f46575f5c4473545e525a5f1d505c5e">[email&#160;protected]</span></a>
+            <a href="https://www.linkedin.com/in/lludlow2/" target="_blank" class="btn btn-muted">LinkedIn /lludlow2</a>
+        </div>
+    </div>
+</section>
+```
+
+</main>
+
+<footer>
+    <div class="footer-text">LARRY LUDLOW // PRINCIPAL ENGINEER // LIVONIA, MI</div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+```
+// Typed status badge
+const statusEl = document.getElementById('status-text');
+const statusStr = 'PRINCIPAL ENGINEER @ VERGEOS';
+let si = 0;
+const typeStatus = () => {
+    if (si < statusStr.length) { statusEl.textContent += statusStr[si++]; setTimeout(typeStatus, 45); }
+};
+setTimeout(typeStatus, 300);
+
+// Typed eyebrow
+const eyebrowEl = document.getElementById('eyebrow-text');
+const eyebrowStr = 'Principal Engineer // Livonia, MI';
+let ei = 0;
+const typeEyebrow = () => {
+    if (ei < eyebrowStr.length) { eyebrowEl.textContent += eyebrowStr[ei++]; setTimeout(typeEyebrow, 35); }
+};
+setTimeout(typeEyebrow, 800);
+
+// Smooth scroll with nav offset
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        window.scrollTo({ top: target.offsetTop - 72, behavior: 'smooth' });
+    });
+});
+
+// Active nav highlight
+const sections = document.querySelectorAll('section[id]');
+const links    = docu
+```
